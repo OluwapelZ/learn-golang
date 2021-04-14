@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+    app:
+        image: go_rest_api
+        build: .
+        container_name: go_rest_app
+        ports:
+        - 8010:8010
+        volumes:
+        - ".:/app"
